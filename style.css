@@ -1,0 +1,270 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {background-color: #a1c181}
+  
+  .logo {
+    display: block;
+    width: 75px;
+    height: auto;
+  }
+  
+  .logotype {
+  
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #fffafa;
+    display: block;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 30px;
+    padding-top: 50px;
+    align-items: left;
+  }
+  
+  .surveybutton {
+    
+    background-color: #fffafa;
+    border: none;
+    color: #a1c181;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .surveybutton:hover {
+    box-shadow: 0px 0px 50px 13px #fffafa;
+    transition: 0.5s;
+  }
+  
+  .container {
+    height: 200px;
+    position: relative;
+  }
+  
+  .flexbox {
+    display: flex;
+    margin: auto;
+    padding-left: 530px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .flexbox > div {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .head {
+    padding-bottom: 30px;
+    align-items: center;
+  }
+  
+  .startsurvey:link { text-decoration: none; 
+           color: #a1c181;
+         }
+  .startsurvey:visited { text-decoration: none; 
+              color: #a1c181;
+            }
+  .startsurvey:hover { text-decoration: none; 
+            color: #a1c181;
+          }
+  .startsurvey:active { text-decoration: none; 
+             color: #a1c181;
+           }
+  
+  
+  .ratingcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+  }
+  
+  .rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+  }
+  
+  .rating__input {
+    display: inline;
+    width: 4rem;
+    height: 4rem;
+    color: #fffafa;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+    padding-left: 20px;
+    transition: height 0.2s;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    height: 4rem;
+  }
+  
+  .rating__input::after {
+    width: 100%;
+    height: 100%;
+    content: attr(value);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a1c181;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    
+  }
+  
+  .rating__input::before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: currentColor;
+    border-radius: 100px;
+    transition: 0.2s;
+  }
+  
+  /* select checked element & it's previous siblings */
+  .rating .rating__input:checked,
+  .rating .rating__input:checked ~.rating__input {
+    color: #fffafa;
+  }
+  
+  .rating.rating:hover .rating__input {
+    color: #a1c181;
+    opacity: 1;
+  }
+  
+  /* select hover element & it's previous siblings */
+  .rating:hover .rating__input:hover,
+  .rating:hover .rating__input:hover ~ .rating__input {
+    color: #fffafa;
+    opacity: 1;
+  }
+  
+  .question {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fffafa;
+    display: block;
+    text-align: center;
+    padding-top: 150px;
+    width: auto;
+    margin: auto;
+  }
+  
+  .description{
+    font-weight: 300;
+    padding-top: 5px;
+    padding-left: 300px;
+  }
+  
+  .metercontainer {
+    display: flex;
+    margin: auto;
+    width: auto;
+    padding-left: 420px;
+    align-items: center;
+  }
+  
+  .meter {
+    height: 150px;
+    width: 600px;
+  }
+  
+  
+  .outputstitle{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #fffafa;
+    display: block;
+    font-size: 30px;
+    padding-left: 340px;
+    padding-top: 50px;
+  }
+  
+  .outputstitlecontainer{
+    margin: auto;
+    width: auto;
+  }
+  
+  .outputs{
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    padding-left: 260px;
+  }
+  
+  .output1{
+    padding-top: 75px;
+    padding-left: 30px;
+  }
+  
+  .output2{
+    padding-left: 30px;
+  }
+  
+  .output3{
+    padding-left: 30px;
+  }
+  
+  .outputtitle{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #fffafa;
+    display: block;
+    font-size: 30px;
+  }
+  
+  .description{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #fffafa;
+    font-size: 20px;
+    width: 850px;
+  }
+  
+  .hyperlink{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #fffafa;
+  }
+  .hyperlink:visited{
+    color: #fffafa;
+  }
+  
+  .thankyou {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fffafa;
+    text-align: center;
+    padding-top: 0px;
+    width: auto;
+    margin: auto;
+  }
+  
+  .thankyoutext {
+    padding-top: 100px;
+  }
+  
+  #message {
+    text-align: center;
+    padding-left: 10px;
+  }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head class=head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+  Precision Health
+  </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+  
+<body onLoad="updateSum(); showMessage();"> 
+ <div class=thankyou>
+   <h1 class=thankyoutext>
+     Thank you for taking the survey! Here are your results.
+   </h1>
+   <h2 class=outoften id = "score">
+     You scored x out of one hundred.
+   </h2>
+ </div>
+  <div class = metercontainer>
+    <meter class="meter" id = "meter" value=".24" max="1" max="0" low=".50"></meter>
+  </div>
+  <div class=outputstitlecontainer>
+    <h1 class = outputstitle id=message>
+    </h1>
+    <h1 class = outputstitle id=suggestions>
+    Based on your responses, here are some suggestions!
+  </h1>
+  </div>
+  <div class=outputs>
+    <div class=output1>
+      <h2 class=outputtitle id = "outputtitle1">
+        
+      </h2>
+      <p class=description id="description1">
+        
+      </p>
+    </div>
+    <div class=output2>
+      <h2 class=outputtitle id = "outputtitle2">
+        
+      </h2>
+      <p class=description id="description2">
+        
+      </p>
+    </div>
+    <div class=output3>
+      <h2 class=outputtitle id = "outputtitle3">
+        
+      </h2>
+      <p class=description id="description3">
+        
+      </p>
+    </div>
+  </div>
+  
+
+</body>
+
+  <script src="script.js"></script>
+  
+</html>

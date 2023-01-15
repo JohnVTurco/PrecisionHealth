@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head class=head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+  Precision Health
+  </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+  
+<body id="body">
+  <div class=question>
+    <h1 class=rateyourdaytoday id="question">
+      1. Rate your day today!
+    </h1>
+    <h2 class=description id="h2">
+      1 being awful and 5 being awesome.
+    </h2>
+  </div>
+  <div class = ratingcontainer>
+    <div class="rating" id="rate">
+      <input type="radio" name="rating" id="ratings5" onclick="switchQuestion(5)" value="5" class="rating__input">
+      <input type="radio" name="rating" id="ratings4" onclick="switchQuestion(4)" value="4" class="rating__input">
+      <input type="radio" name="rating" id="ratings3" onclick="switchQuestion(3)" value="3" class="rating__input">
+      <input type="radio" name="rating" id="ratings2" onclick="switchQuestion(2)"value="2" class="rating__input">
+      <input type="radio" name="rating" id="ratings1" onclick="switchQuestion(1)" value="1" class="rating__input">
+    </div>
+  </div>
+
+<!--
+  <div class=ratingcontainer>
+    <div class="rating" id="truefalse">
+      <input type="radio" name="rating" id="ratingsFalse" onclick="switchQuestion(0)" value="No" class="rating__input">
+      <input type="radio" name="rating" id="ratingsTrue" onclick="switchQuestion(3)" value="Yes" class="rating__input">
+    </div>
+  </div>
+ -->
+</body>
+<script src="script.js"></script>
+</html>
